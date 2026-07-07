@@ -250,7 +250,7 @@ body{
 }
 .booking-card{
   position:absolute;
-  right:55px;
+  right:35px;
   bottom:55px;
   width:350px;
   background:rgba(255,255,255,.96);
