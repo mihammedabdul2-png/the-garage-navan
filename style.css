@@ -180,6 +180,24 @@ body{
     gap:20px;
   }
 }
+
+.trust-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:28px;
+}
+
+.trust-badges span{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  padding:10px 14px;
+  border-radius:999px;
+  color:#e5e7eb;
+  font-size:14px;
+  font-weight:700;
+}
+
 .booking-card{
     position:absolute;
     right:60px;
@@ -287,3 +305,4 @@ body{
     margin:30px auto;
   }
 }
+ 32005e3fbcc514a2f2d299a153f66e14373c0314
