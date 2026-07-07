@@ -122,6 +122,7 @@ body{
 }
 
 .hero-right{
+    position:relative;
   background:
   linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.5)),
   url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80");
@@ -171,11 +172,118 @@ body{
   }
 
   .hero-right{
-    min-height:350px;
+    position:relative;
   }
 
   .stats{
     grid-template-columns:1fr 1fr;
     gap:20px;
+  }
+}
+.booking-card{
+    position:absolute;
+    right:60px;
+    bottom:60px;
+
+    width:340px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+}
+
+.booking-card h3{
+    color:#07111f;
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.booking-card input{
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+.booking-card button{
+    background:#e30613;
+    color:white;
+    border:none;
+    padding:16px;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking-card button:hover{
+    background:#0057b8;
+}
+.booking-card{
+  position:absolute;
+  right:55px;
+  bottom:55px;
+  width:350px;
+  background:rgba(255,255,255,.96);
+  padding:28px;
+  border-radius:22px;
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.booking-card span{
+  color:#e30613;
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:13px;
+}
+
+.booking-card h3{
+  color:#07111f;
+  font-size:28px;
+}
+
+.booking-card input{
+  padding:15px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  font-size:15px;
+}
+
+.booking-card button{
+  background:#e30613;
+  color:white;
+  border:none;
+  padding:16px;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.booking-card button:hover{
+  background:#0057b8;
+  transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+  .booking-card{
+    position:static;
+    width:90%;
+    margin:30px auto;
   }
 }
