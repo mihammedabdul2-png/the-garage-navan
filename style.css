@@ -1313,3 +1313,151 @@ section{
     border-right:1px solid var(--border);
   }
 }
+/* ========================================
+   PREMIUM JAVASCRIPT EFFECTS
+======================================== */
+
+/* Smooth page movement */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent scrolling when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Header scroll effect */
+header {
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease,
+    padding 0.35s ease;
+}
+
+header.scrolled {
+  background: rgba(8, 8, 8, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Active navigation link */
+nav a,
+.nav-links a {
+  position: relative;
+}
+
+nav a::after,
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+.nav-links a:hover::after,
+nav a.active-link::after,
+.nav-links a.active-link::after {
+  width: 100%;
+}
+
+/* Button ripple effect */
+.btn,
+button,
+.primary-button,
+.secondary-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(0);
+  animation: buttonRipple 0.65s linear;
+  pointer-events: none;
+}
+
+@keyframes buttonRipple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  nav,
+  .nav-links,
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(82%, 360px);
+    height: 100vh;
+    padding: 110px 35px 40px;
+    background: rgba(8, 8, 8, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    transition: right 0.4s ease;
+    z-index: 999;
+    box-shadow: -20px 0 60px rgba(0, 0, 0, 0.45);
+  }
+
+  nav.active,
+  .nav-links.active,
+  .navigation.active {
+    right: 0;
+  }
+
+  nav a,
+  .nav-links a,
+  .navigation a {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .menu-toggle,
+  .mobile-menu-button,
+  .hamburger {
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+/* Reduce animation for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
