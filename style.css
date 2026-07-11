@@ -306,3 +306,85 @@ body{
   }
 }
  32005e3fbcc514a2f2d299a153f66e14373c0314
+ /* FINAL HERO LAYOUT FIX */
+
+.hero{
+  width:100% !important;
+  min-height:760px !important;
+  padding-top:100px !important;
+  display:grid !important;
+  grid-template-columns:minmax(0, 1fr) minmax(520px, 1fr) !important;
+  background:#07111f !important;
+}
+
+.hero-left{
+  grid-column:1 !important;
+  padding:70px 7% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  position:relative !important;
+  z-index:2 !important;
+}
+
+.hero-right{
+  grid-column:2 !important;
+  display:block !important;
+  position:relative !important;
+  min-width:0 !important;
+  min-height:660px !important;
+
+  background-image:
+    linear-gradient(rgba(3,10,20,.12),rgba(3,10,20,.58)),
+    url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=85") !important;
+
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+}
+
+.booking-card{
+  position:absolute !important;
+  width:350px !important;
+  right:45px !important;
+  left:auto !important;
+  bottom:50px !important;
+  transform:none !important;
+  z-index:5 !important;
+}
+
+.stats{
+  position:relative !important;
+  z-index:10 !important;
+  width:80% !important;
+  max-width:1300px !important;
+  margin:-55px auto 75px !important;
+}
+
+@media(max-width:950px){
+  .hero{
+    grid-template-columns:1fr !important;
+  }
+
+  .hero-left{
+    grid-column:1 !important;
+  }
+
+  .hero-right{
+    grid-column:1 !important;
+    min-height:620px !important;
+  }
+
+  .booking-card{
+    right:50% !important;
+    left:auto !important;
+    bottom:40px !important;
+    transform:translateX(50%) !important;
+    width:min(90%,350px) !important;
+  }
+
+  .stats{
+    width:90% !important;
+    margin:0 auto 60px !important;
+  }
+}
