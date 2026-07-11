@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     'nav a[href^="#"], .nav-links a[href^="#"]'
   );
   const revealElements = document.querySelectorAll(
-    ".reveal, section, .service-card, .feature-card, .testimonial-card"
+  ".service-card, .feature-card, .testimonial-card, .faq-item"
   );
 
   /*
@@ -98,12 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ========================================
   SCROLL REVEAL ANIMATIONS
   ========================================
-  */
-
-  revealElements.forEach((element) => {
-    element.classList.add("reveal");
-  });
-
+  if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -114,14 +109,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.12,
-      rootMargin: "0px 0px -60px 0px",
+      threshold: 0.1,
+      rootMargin: "0px 0px -30px 0px",
     }
   );
 
   revealElements.forEach((element) => {
+    element.classList.add("reveal", "reveal-ready");
     revealObserver.observe(element);
   });
+} else {
+  revealElements.forEach((element) => {
+    element.classList.add("visible");
+  });
+}
 
   /*
   ========================================
