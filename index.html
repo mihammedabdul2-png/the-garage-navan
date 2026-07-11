@@ -29,7 +29,591 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   >
+/* ==================================================
+   LUXURY MODERN DESIGN OVERRIDES
+================================================== */
 
+:root{
+  --navy-950:#02060c;
+  --navy-900:#050b13;
+  --navy-850:#09121d;
+  --navy-800:#0d1927;
+
+  --blue:#2389ff;
+  --blue-light:#78b9ff;
+  --blue-glow:rgba(35,137,255,.28);
+
+  --red:#ff2435;
+  --white:#ffffff;
+  --off-white:#f4f6f8;
+
+  --grey-100:#e9edf2;
+  --grey-300:#a6b0bd;
+  --grey-500:#667386;
+
+  --text-dark:#07111d;
+
+  --shadow-lg:
+    0 40px 100px rgba(0,0,0,.38);
+
+  --shadow-card:
+    0 25px 70px rgba(4,17,33,.13);
+
+  --radius-lg:32px;
+  --radius-md:20px;
+}
+
+/* Global */
+
+body{
+  background:#030810;
+}
+
+.section{
+  padding:145px 0;
+}
+
+.section-light{
+  background:
+    linear-gradient(180deg,#f7f9fb 0%,#eef2f6 100%);
+}
+
+.section-white{
+  background:#ffffff;
+}
+
+.section-heading{
+  font-size:clamp(44px,5vw,76px);
+  letter-spacing:-3.5px;
+  line-height:.98;
+}
+
+.section-description{
+  font-size:18px;
+  line-height:1.9;
+}
+
+/* Premium header */
+
+.site-header{
+  background:transparent;
+}
+
+.site-header.scrolled{
+  background:rgba(2,6,12,.84);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 15px 45px rgba(0,0,0,.22);
+  backdrop-filter:blur(28px);
+}
+
+.navbar{
+  min-height:112px;
+}
+
+.brand-symbol{
+  border:1px solid rgba(120,185,255,.75);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(35,137,255,.3),
+      rgba(255,255,255,.03)
+    );
+  box-shadow:
+    inset 0 0 25px rgba(35,137,255,.22),
+    0 12px 40px rgba(35,137,255,.15);
+}
+
+.brand-copy strong{
+  font-size:24px;
+  letter-spacing:-1px;
+}
+
+.nav-links{
+  gap:42px;
+}
+
+.nav-links a{
+  color:rgba(255,255,255,.72);
+  font-size:13px;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+
+.nav-links a:hover{
+  color:white;
+}
+
+.header-action{
+  min-height:56px;
+  padding:0 25px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* Luxury hero */
+
+.hero{
+  min-height:1000px;
+  background:
+    radial-gradient(
+      circle at 15% 24%,
+      rgba(35,137,255,.22),
+      transparent 30%
+    ),
+    linear-gradient(
+      100deg,
+      rgba(2,6,12,1) 0%,
+      rgba(2,6,12,.97) 42%,
+      rgba(2,6,12,.48) 68%,
+      rgba(2,6,12,.18) 100%
+    ),
+    url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=2400&q=95");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero::before{
+  width:800px;
+  height:800px;
+  top:-360px;
+  left:-310px;
+  border:1px solid rgba(120,185,255,.13);
+}
+
+.hero-inner{
+  min-height:1000px;
+  grid-template-columns:minmax(0,1.2fr) minmax(380px,.7fr);
+  gap:90px;
+}
+
+.hero-kicker{
+  margin-bottom:34px;
+  color:var(--blue-light);
+  letter-spacing:2.8px;
+}
+
+.hero h1{
+  max-width:950px;
+  font-size:clamp(66px,7vw,118px);
+  line-height:.91;
+  letter-spacing:-7px;
+}
+
+.hero h1 em{
+  margin-top:10px;
+  color:white;
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #9acaff 55%,
+      #2389ff 100%
+    );
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.hero-description{
+  max-width:720px;
+  margin-top:40px;
+  color:rgba(229,237,247,.72);
+  font-size:19px;
+  line-height:1.95;
+}
+
+.hero-features{
+  margin-top:36px;
+}
+
+.hero-features li{
+  padding:12px 17px;
+  border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.045);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
+}
+
+.hero-buttons{
+  margin-top:46px;
+}
+
+.button{
+  min-height:66px;
+  padding:0 34px;
+  border-radius:999px;
+  letter-spacing:.2px;
+}
+
+.button-primary{
+  background:
+    linear-gradient(
+      135deg,
+      #ff3445,
+      #e60018
+    );
+  box-shadow:
+    0 20px 55px rgba(255,36,53,.34),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+.button-secondary{
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.055);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.button:hover{
+  transform:translateY(-5px) scale(1.015);
+}
+
+/* Luxury booking panel */
+
+.booking-panel{
+  padding:40px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:34px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15,30,48,.82),
+      rgba(3,10,18,.88)
+    );
+  box-shadow:
+    0 50px 120px rgba(0,0,0,.58),
+    inset 0 1px 0 rgba(255,255,255,.12);
+  backdrop-filter:blur(30px);
+}
+
+.booking-icon{
+  width:58px;
+  height:58px;
+  border:1px solid rgba(120,185,255,.22);
+  border-radius:18px;
+  background:rgba(35,137,255,.14);
+  box-shadow:0 12px 35px rgba(35,137,255,.15);
+}
+
+.booking-panel h2{
+  margin-top:28px;
+  font-size:38px;
+  letter-spacing:-1.8px;
+}
+
+.field input,
+.field select,
+.field textarea{
+  min-height:62px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;
+  background:rgba(255,255,255,.055);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:rgba(120,185,255,.85);
+  background:rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 4px rgba(35,137,255,.12),
+    0 10px 35px rgba(0,0,0,.15);
+}
+
+/* Floating trust strip */
+
+.trust-strip-wrap{
+  margin-top:-72px;
+}
+
+.trust-strip{
+  border:1px solid rgba(7,25,45,.08);
+  border-radius:30px;
+  box-shadow:
+    0 35px 90px rgba(4,17,33,.18);
+}
+
+.trust-item{
+  min-height:155px;
+  padding:32px;
+}
+
+.trust-item-icon{
+  width:60px;
+  height:60px;
+  flex-basis:60px;
+  border-radius:19px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(35,137,255,.15),
+      rgba(35,137,255,.04)
+    );
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6);
+}
+
+.trust-item strong{
+  font-size:22px;
+  letter-spacing:-.7px;
+}
+
+/* Service cards */
+
+.services-grid{
+  gap:30px;
+}
+
+.service-card{
+  min-height:470px;
+  padding:38px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:30px;
+  box-shadow:0 30px 70px rgba(4,17,33,.16);
+}
+
+.service-card::before{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2,6,12,.02) 10%,
+      rgba(2,6,12,.2) 45%,
+      rgba(2,6,12,.98) 100%
+    );
+}
+
+.service-card:hover{
+  transform:translateY(-14px);
+  box-shadow:0 45px 90px rgba(4,17,33,.24);
+}
+
+.service-card h3{
+  font-size:30px;
+  letter-spacing:-1.2px;
+}
+
+.service-link{
+  color:var(--blue-light);
+}
+
+/* Dark premium about section */
+
+.experience{
+  background:
+    radial-gradient(
+      circle at 78% 18%,
+      rgba(35,137,255,.13),
+      transparent 27%
+    ),
+    linear-gradient(
+      145deg,
+      #02060c,
+      #091522
+    );
+}
+
+.experience-image{
+  min-height:750px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:34px;
+  box-shadow:0 45px 110px rgba(0,0,0,.55);
+}
+
+.experience-badge{
+  width:200px;
+  height:200px;
+  background:
+    linear-gradient(
+      145deg,
+      #2389ff,
+      #0754a7
+    );
+  box-shadow:0 25px 60px rgba(35,137,255,.35);
+}
+
+.benefit{
+  padding:28px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:22px;
+  background:rgba(255,255,255,.035);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+.benefit:hover{
+  border-color:rgba(120,185,255,.3);
+  background:rgba(35,137,255,.06);
+}
+
+/* Process */
+
+.process-card{
+  padding:38px;
+  border-radius:24px;
+  box-shadow:0 20px 55px rgba(7,25,45,.08);
+  transition:.3s ease;
+}
+
+.process-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 70px rgba(7,25,45,.14);
+}
+
+.process-step{
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  background:
+    linear-gradient(
+      145deg,
+      #102238,
+      #050b13
+    );
+  box-shadow:0 12px 30px rgba(5,11,19,.2);
+}
+
+/* Gallery */
+
+.gallery-grid{
+  gap:22px;
+}
+
+.gallery-item{
+  border-radius:28px;
+  box-shadow:0 22px 55px rgba(7,25,45,.14);
+}
+
+/* Reviews */
+
+.reviews{
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(35,137,255,.1),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #050b13,
+      #0b1928
+    );
+}
+
+.review-card{
+  padding:40px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:26px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.06),
+      rgba(255,255,255,.025)
+    );
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+  transition:.3s ease;
+}
+
+.review-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(120,185,255,.25);
+}
+
+/* FAQ */
+
+.faq-item{
+  border-radius:20px;
+  box-shadow:0 12px 40px rgba(7,25,45,.055);
+}
+
+.faq-question{
+  padding:28px 30px;
+  font-size:16px;
+}
+
+/* Contact */
+
+.contact{
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(35,137,255,.13),
+      transparent 30%
+    ),
+    #02060c;
+}
+
+.contact-info{
+  padding:58px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:32px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.055),
+      rgba(255,255,255,.025)
+    );
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.map-card{
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:32px;
+  box-shadow:0 45px 100px rgba(0,0,0,.5);
+}
+
+/* Footer */
+
+.footer{
+  padding-top:70px;
+  background:#01040a;
+}
+
+/* Smooth reveal */
+
+.reveal{
+  transform:translateY(50px);
+  transition:
+    opacity .9s cubic-bezier(.22,1,.36,1),
+    transform .9s cubic-bezier(.22,1,.36,1);
+}
+
+/* Mobile luxury adjustments */
+
+@media(max-width:760px){
+
+  .section{
+    padding:95px 0;
+  }
+
+  .hero-inner{
+    padding-top:155px;
+  }
+
+  .hero h1{
+    font-size:54px;
+    line-height:.96;
+    letter-spacing:-3.5px;
+  }
+
+  .booking-panel{
+    padding:28px;
+    border-radius:26px;
+  }
+
+  .trust-strip-wrap{
+    margin-top:-30px;
+  }
+
+  .service-card{
+    min-height:430px;
+  }
+
+  .experience-image{
+    min-height:560px;
+  }
+
+  .contact-info{
+    padding:34px;
+  }
+}
   <style>
     :root {
       --navy-950: #050b14;
