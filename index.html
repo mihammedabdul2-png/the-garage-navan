@@ -10,2003 +10,80 @@
 
   <meta
     name="description"
-    content="Professional vehicle servicing, diagnostics and repairs at The Garage Navan."
+    content="Professional vehicle servicing, diagnostics and mechanical repairs in Navan."
   >
 
-  <title>The Garage Navan | Professional Car Service</title>
+  <title>
+    The Garage Navan | Vehicle Servicing & Repairs
+  </title>
 
-  <!-- Premium fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   >
-/* ==================================================
-   LUXURY MODERN DESIGN OVERRIDES
-================================================== */
 
-:root{
-  --navy-950:#02060c;
-  --navy-900:#050b13;
-  --navy-850:#09121d;
-  --navy-800:#0d1927;
-
-  --blue:#2389ff;
-  --blue-light:#78b9ff;
-  --blue-glow:rgba(35,137,255,.28);
-
-  --red:#ff2435;
-  --white:#ffffff;
-  --off-white:#f4f6f8;
-
-  --grey-100:#e9edf2;
-  --grey-300:#a6b0bd;
-  --grey-500:#667386;
-
-  --text-dark:#07111d;
-
-  --shadow-lg:
-    0 40px 100px rgba(0,0,0,.38);
-
-  --shadow-card:
-    0 25px 70px rgba(4,17,33,.13);
-
-  --radius-lg:32px;
-  --radius-md:20px;
-}
-
-/* Global */
-
-body{
-  background:#030810;
-}
-
-.section{
-  padding:145px 0;
-}
-
-.section-light{
-  background:
-    linear-gradient(180deg,#f7f9fb 0%,#eef2f6 100%);
-}
-
-.section-white{
-  background:#ffffff;
-}
-
-.section-heading{
-  font-size:clamp(44px,5vw,76px);
-  letter-spacing:-3.5px;
-  line-height:.98;
-}
-
-.section-description{
-  font-size:18px;
-  line-height:1.9;
-}
-
-/* Premium header */
-
-.site-header{
-  background:transparent;
-}
-
-.site-header.scrolled{
-  background:rgba(2,6,12,.84);
-  border-bottom:1px solid rgba(255,255,255,.08);
-  box-shadow:0 15px 45px rgba(0,0,0,.22);
-  backdrop-filter:blur(28px);
-}
-
-.navbar{
-  min-height:112px;
-}
-
-.brand-symbol{
-  border:1px solid rgba(120,185,255,.75);
-  background:
-    linear-gradient(
-      145deg,
-      rgba(35,137,255,.3),
-      rgba(255,255,255,.03)
-    );
-  box-shadow:
-    inset 0 0 25px rgba(35,137,255,.22),
-    0 12px 40px rgba(35,137,255,.15);
-}
-
-.brand-copy strong{
-  font-size:24px;
-  letter-spacing:-1px;
-}
-
-.nav-links{
-  gap:42px;
-}
-
-.nav-links a{
-  color:rgba(255,255,255,.72);
-  font-size:13px;
-  letter-spacing:.5px;
-  text-transform:uppercase;
-}
-
-.nav-links a:hover{
-  color:white;
-}
-
-.header-action{
-  min-height:56px;
-  padding:0 25px;
-  border:1px solid rgba(255,255,255,.22);
-  border-radius:999px;
-  background:rgba(255,255,255,.05);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
-}
-
-/* Luxury hero */
-
-.hero{
-  min-height:1000px;
-  background:
-    radial-gradient(
-      circle at 15% 24%,
-      rgba(35,137,255,.22),
-      transparent 30%
-    ),
-    linear-gradient(
-      100deg,
-      rgba(2,6,12,1) 0%,
-      rgba(2,6,12,.97) 42%,
-      rgba(2,6,12,.48) 68%,
-      rgba(2,6,12,.18) 100%
-    ),
-    url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=2400&q=95");
-  background-size:cover;
-  background-position:center;
-}
-
-.hero::before{
-  width:800px;
-  height:800px;
-  top:-360px;
-  left:-310px;
-  border:1px solid rgba(120,185,255,.13);
-}
-
-.hero-inner{
-  min-height:1000px;
-  grid-template-columns:minmax(0,1.2fr) minmax(380px,.7fr);
-  gap:90px;
-}
-
-.hero-kicker{
-  margin-bottom:34px;
-  color:var(--blue-light);
-  letter-spacing:2.8px;
-}
-
-.hero h1{
-  max-width:950px;
-  font-size:clamp(66px,7vw,118px);
-  line-height:.91;
-  letter-spacing:-7px;
-}
-
-.hero h1 em{
-  margin-top:10px;
-  color:white;
-  background:
-    linear-gradient(
-      90deg,
-      #ffffff 0%,
-      #9acaff 55%,
-      #2389ff 100%
-    );
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-}
-
-.hero-description{
-  max-width:720px;
-  margin-top:40px;
-  color:rgba(229,237,247,.72);
-  font-size:19px;
-  line-height:1.95;
-}
-
-.hero-features{
-  margin-top:36px;
-}
-
-.hero-features li{
-  padding:12px 17px;
-  border:1px solid rgba(255,255,255,.1);
-  background:rgba(255,255,255,.045);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.07);
-}
-
-.hero-buttons{
-  margin-top:46px;
-}
-
-.button{
-  min-height:66px;
-  padding:0 34px;
-  border-radius:999px;
-  letter-spacing:.2px;
-}
-
-.button-primary{
-  background:
-    linear-gradient(
-      135deg,
-      #ff3445,
-      #e60018
-    );
-  box-shadow:
-    0 20px 55px rgba(255,36,53,.34),
-    inset 0 1px 0 rgba(255,255,255,.22);
-}
-
-.button-secondary{
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.055);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
-}
-
-.button:hover{
-  transform:translateY(-5px) scale(1.015);
-}
-
-/* Luxury booking panel */
-
-.booking-panel{
-  padding:40px;
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:34px;
-  background:
-    linear-gradient(
-      145deg,
-      rgba(15,30,48,.82),
-      rgba(3,10,18,.88)
-    );
-  box-shadow:
-    0 50px 120px rgba(0,0,0,.58),
-    inset 0 1px 0 rgba(255,255,255,.12);
-  backdrop-filter:blur(30px);
-}
-
-.booking-icon{
-  width:58px;
-  height:58px;
-  border:1px solid rgba(120,185,255,.22);
-  border-radius:18px;
-  background:rgba(35,137,255,.14);
-  box-shadow:0 12px 35px rgba(35,137,255,.15);
-}
-
-.booking-panel h2{
-  margin-top:28px;
-  font-size:38px;
-  letter-spacing:-1.8px;
-}
-
-.field input,
-.field select,
-.field textarea{
-  min-height:62px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:16px;
-  background:rgba(255,255,255,.055);
-}
-
-.field input:focus,
-.field select:focus,
-.field textarea:focus{
-  border-color:rgba(120,185,255,.85);
-  background:rgba(255,255,255,.08);
-  box-shadow:
-    0 0 0 4px rgba(35,137,255,.12),
-    0 10px 35px rgba(0,0,0,.15);
-}
-
-/* Floating trust strip */
-
-.trust-strip-wrap{
-  margin-top:-72px;
-}
-
-.trust-strip{
-  border:1px solid rgba(7,25,45,.08);
-  border-radius:30px;
-  box-shadow:
-    0 35px 90px rgba(4,17,33,.18);
-}
-
-.trust-item{
-  min-height:155px;
-  padding:32px;
-}
-
-.trust-item-icon{
-  width:60px;
-  height:60px;
-  flex-basis:60px;
-  border-radius:19px;
-  background:
-    linear-gradient(
-      145deg,
-      rgba(35,137,255,.15),
-      rgba(35,137,255,.04)
-    );
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.6);
-}
-
-.trust-item strong{
-  font-size:22px;
-  letter-spacing:-.7px;
-}
-
-/* Service cards */
-
-.services-grid{
-  gap:30px;
-}
-
-.service-card{
-  min-height:470px;
-  padding:38px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:30px;
-  box-shadow:0 30px 70px rgba(4,17,33,.16);
-}
-
-.service-card::before{
-  background:
-    linear-gradient(
-      180deg,
-      rgba(2,6,12,.02) 10%,
-      rgba(2,6,12,.2) 45%,
-      rgba(2,6,12,.98) 100%
-    );
-}
-
-.service-card:hover{
-  transform:translateY(-14px);
-  box-shadow:0 45px 90px rgba(4,17,33,.24);
-}
-
-.service-card h3{
-  font-size:30px;
-  letter-spacing:-1.2px;
-}
-
-.service-link{
-  color:var(--blue-light);
-}
-
-/* Dark premium about section */
-
-.experience{
-  background:
-    radial-gradient(
-      circle at 78% 18%,
-      rgba(35,137,255,.13),
-      transparent 27%
-    ),
-    linear-gradient(
-      145deg,
-      #02060c,
-      #091522
-    );
-}
-
-.experience-image{
-  min-height:750px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:34px;
-  box-shadow:0 45px 110px rgba(0,0,0,.55);
-}
-
-.experience-badge{
-  width:200px;
-  height:200px;
-  background:
-    linear-gradient(
-      145deg,
-      #2389ff,
-      #0754a7
-    );
-  box-shadow:0 25px 60px rgba(35,137,255,.35);
-}
-
-.benefit{
-  padding:28px;
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:22px;
-  background:rgba(255,255,255,.035);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
-}
-
-.benefit:hover{
-  border-color:rgba(120,185,255,.3);
-  background:rgba(35,137,255,.06);
-}
-
-/* Process */
-
-.process-card{
-  padding:38px;
-  border-radius:24px;
-  box-shadow:0 20px 55px rgba(7,25,45,.08);
-  transition:.3s ease;
-}
-
-.process-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 30px 70px rgba(7,25,45,.14);
-}
-
-.process-step{
-  width:58px;
-  height:58px;
-  border-radius:18px;
-  background:
-    linear-gradient(
-      145deg,
-      #102238,
-      #050b13
-    );
-  box-shadow:0 12px 30px rgba(5,11,19,.2);
-}
-
-/* Gallery */
-
-.gallery-grid{
-  gap:22px;
-}
-
-.gallery-item{
-  border-radius:28px;
-  box-shadow:0 22px 55px rgba(7,25,45,.14);
-}
-
-/* Reviews */
-
-.reviews{
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(35,137,255,.1),
-      transparent 30%
-    ),
-    linear-gradient(
-      145deg,
-      #050b13,
-      #0b1928
-    );
-}
-
-.review-card{
-  padding:40px;
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:26px;
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.06),
-      rgba(255,255,255,.025)
-    );
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
-  transition:.3s ease;
-}
-
-.review-card:hover{
-  transform:translateY(-8px);
-  border-color:rgba(120,185,255,.25);
-}
-
-/* FAQ */
-
-.faq-item{
-  border-radius:20px;
-  box-shadow:0 12px 40px rgba(7,25,45,.055);
-}
-
-.faq-question{
-  padding:28px 30px;
-  font-size:16px;
-}
-
-/* Contact */
-
-.contact{
-  background:
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(35,137,255,.13),
-      transparent 30%
-    ),
-    #02060c;
-}
-
-.contact-info{
-  padding:58px;
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:32px;
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.055),
-      rgba(255,255,255,.025)
-    );
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
-}
-
-.map-card{
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:32px;
-  box-shadow:0 45px 100px rgba(0,0,0,.5);
-}
-
-/* Footer */
-
-.footer{
-  padding-top:70px;
-  background:#01040a;
-}
-
-/* Smooth reveal */
-
-.reveal{
-  transform:translateY(50px);
-  transition:
-    opacity .9s cubic-bezier(.22,1,.36,1),
-    transform .9s cubic-bezier(.22,1,.36,1);
-}
-
-/* Mobile luxury adjustments */
-
-@media(max-width:760px){
-
-  .section{
-    padding:95px 0;
-  }
-
-  .hero-inner{
-    padding-top:155px;
-  }
-
-  .hero h1{
-    font-size:54px;
-    line-height:.96;
-    letter-spacing:-3.5px;
-  }
-
-  .booking-panel{
-    padding:28px;
-    border-radius:26px;
-  }
-
-  .trust-strip-wrap{
-    margin-top:-30px;
-  }
-
-  .service-card{
-    min-height:430px;
-  }
-
-  .experience-image{
-    min-height:560px;
-  }
-
-  .contact-info{
-    padding:34px;
-  }
-}
-  <style>
-    :root {
-      --navy-950: #050b14;
-      --navy-900: #081321;
-      --navy-850: #0c1929;
-      --navy-800: #102238;
-      --blue: #0876e1;
-      --blue-light: #4da6ff;
-      --red: #ec111f;
-      --white: #ffffff;
-      --off-white: #f5f7fa;
-      --grey-100: #e8edf3;
-      --grey-300: #aab5c3;
-      --grey-500: #657286;
-      --text-dark: #0a1726;
-      --shadow-lg: 0 30px 80px rgba(1, 8, 18, 0.28);
-      --shadow-card: 0 20px 55px rgba(7, 25, 45, 0.12);
-      --radius-lg: 28px;
-      --radius-md: 18px;
-      --container: 1460px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      overflow-x: hidden;
-      background: var(--off-white);
-      color: var(--text-dark);
-      font-family: "Inter", sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    body.menu-open {
-      overflow: hidden;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
-
-    button {
-      cursor: pointer;
-    }
-
-    section {
-      scroll-margin-top: 100px;
-    }
-
-    .container {
-      width: min(90%, var(--container));
-      margin: 0 auto;
-    }
-
-    .section {
-      padding: 120px 0;
-    }
-
-    .section-light {
-      background: var(--off-white);
-    }
-
-    .section-white {
-      background: var(--white);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--red);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      width: 30px;
-      height: 2px;
-      content: "";
-      background: currentColor;
-    }
-
-    .section-heading {
-      max-width: 760px;
-      margin-top: 20px;
-      font-family: "Manrope", sans-serif;
-      font-size: clamp(40px, 5vw, 68px);
-      line-height: 1.04;
-      letter-spacing: -2.5px;
-    }
-
-    .section-description {
-      max-width: 680px;
-      margin-top: 24px;
-      color: var(--grey-500);
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    /* Header */
-
-    .site-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      width: 100%;
-      transition: 0.3s ease;
-    }
-
-    .site-header.scrolled {
-      background: rgba(5, 11, 20, 0.93);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(20px);
-    }
-
-    .navbar {
-      width: min(92%, var(--container));
-      min-height: 104px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 15px;
-      color: var(--white);
-    }
-
-    .brand-symbol {
-      width: 58px;
-      height: 58px;
-      display: grid;
-      place-items: center;
-      position: relative;
-      border: 2px solid var(--blue-light);
-      border-radius: 18px;
-      color: var(--white);
-      font-family: "Manrope", sans-serif;
-      font-weight: 800;
-      box-shadow: inset 0 0 25px rgba(8, 118, 225, 0.22);
-      transform: rotate(45deg);
-    }
-
-    .brand-symbol span {
-      transform: rotate(-45deg);
-    }
-
-    .brand-copy {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-copy strong {
-      font-family: "Manrope", sans-serif;
-      font-size: 23px;
-      line-height: 1;
-      letter-spacing: -0.5px;
-    }
-
-    .brand-copy small {
-      margin-top: 7px;
-      color: var(--blue-light);
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 2.4px;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      list-style: none;
-      color: rgba(255, 255, 255, 0.85);
-    }
-
-    .nav-links a {
-      position: relative;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .nav-links a::after {
-      width: 0;
-      height: 2px;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      content: "";
-      background: var(--red);
-      transition: width 0.25s ease;
-    }
-
-    .nav-links a:hover {
-      color: white;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .header-action {
-      min-height: 52px;
-      padding: 0 22px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      border-radius: 14px;
-      color: var(--white);
-      font-weight: 800;
-      transition: 0.25s ease;
-    }
-
-    .header-action:hover {
-      background: var(--white);
-      color: var(--navy-950);
-    }
-
-    .menu-button {
-      width: 50px;
-      height: 50px;
-      display: none;
-      place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 14px;
-      background: transparent;
-      color: white;
-      font-size: 20px;
-    }
-
-    /* Hero */
-
-    .hero {
-      min-height: 980px;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 18% 25%, rgba(8, 118, 225, 0.18), transparent 32%),
-        linear-gradient(110deg, rgba(5, 11, 20, 1) 0%, rgba(5, 11, 20, 0.96) 43%, rgba(5, 11, 20, 0.22) 75%),
-        url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=2200&q=90");
-      background-position: center;
-      background-size: cover;
-    }
-
-    .hero::before {
-      width: 660px;
-      height: 660px;
-      position: absolute;
-      top: -230px;
-      left: -270px;
-      content: "";
-      border: 1px solid rgba(77, 166, 255, 0.14);
-      border-radius: 50%;
-    }
-
-    .hero::after {
-      width: 470px;
-      height: 470px;
-      position: absolute;
-      right: -140px;
-      bottom: -220px;
-      content: "";
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 50%;
-    }
-
-    .hero-inner {
-      min-height: 980px;
-      padding-top: 135px;
-      padding-bottom: 100px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.72fr);
-      align-items: center;
-      gap: 70px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .hero-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 28px;
-      color: var(--blue-light);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .hero-kicker span {
-      width: 34px;
-      height: 2px;
-      background: var(--red);
-    }
-
-    .hero h1 {
-      color: var(--white);
-      font-family: "Manrope", sans-serif;
-      font-size: clamp(58px, 6vw, 100px);
-      line-height: 0.98;
-      letter-spacing: -5px;
-    }
-
-    .hero h1 em {
-      display: block;
-      color: var(--red);
-      font-style: normal;
-    }
-
-    .hero-description {
-      max-width: 720px;
-      margin-top: 32px;
-      color: rgba(231, 238, 247, 0.82);
-      font-size: 19px;
-      line-height: 1.85;
-    }
-
-    .hero-features {
-      margin-top: 34px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      list-style: none;
-    }
-
-    .hero-features li {
-      padding: 11px 15px;
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      border: 1px solid rgba(255, 255, 255, 0.13);
-      border-radius: 100px;
-      background: rgba(255, 255, 255, 0.06);
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 13px;
-      font-weight: 700;
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-features i {
-      color: var(--blue-light);
-    }
-
-    .hero-buttons {
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .button {
-      min-height: 62px;
-      padding: 0 30px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 11px;
-      border: 0;
-      border-radius: 15px;
-      font-weight: 800;
-      transition: 0.25s ease;
-    }
-
-    .button-primary {
-      background: var(--red);
-      color: white;
-      box-shadow: 0 20px 50px rgba(236, 17, 31, 0.3);
-    }
-
-    .button-secondary {
-      border: 1px solid rgba(255, 255, 255, 0.32);
-      background: rgba(255, 255, 255, 0.07);
-      color: white;
-      backdrop-filter: blur(12px);
-    }
-
-    .button:hover {
-      transform: translateY(-4px);
-    }
-
-    .hero-proof {
-      margin-top: 42px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      color: white;
-    }
-
-    .proof-avatars {
-      display: flex;
-    }
-
-    .proof-avatars span {
-      width: 42px;
-      height: 42px;
-      margin-left: -9px;
-      display: grid;
-      place-items: center;
-      border: 3px solid var(--navy-950);
-      border-radius: 50%;
-      background: var(--navy-800);
-      color: var(--blue-light);
-    }
-
-    .proof-avatars span:first-child {
-      margin-left: 0;
-    }
-
-    .proof-copy strong {
-      display: block;
-      font-size: 14px;
-    }
-
-    .proof-copy small {
-      display: block;
-      margin-top: 4px;
-      color: var(--grey-300);
-    }
-
-    /* Booking glass card */
-
-    .booking-panel {
-      padding: 34px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: var(--radius-lg);
-      background: rgba(7, 19, 33, 0.8);
-      box-shadow: 0 45px 100px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(24px);
-    }
-
-    .booking-panel::before {
-      width: 170px;
-      height: 170px;
-      position: absolute;
-      top: -100px;
-      right: -80px;
-      content: "";
-      border-radius: 50%;
-      background: var(--blue);
-      filter: blur(70px);
-      opacity: 0.25;
-    }
-
-    .booking-icon {
-      width: 52px;
-      height: 52px;
-      display: grid;
-      place-items: center;
-      border-radius: 15px;
-      background: rgba(8, 118, 225, 0.17);
-      color: var(--blue-light);
-      font-size: 20px;
-    }
-
-    .booking-panel h2 {
-      margin-top: 24px;
-      color: white;
-      font-family: "Manrope", sans-serif;
-      font-size: 34px;
-      letter-spacing: -1px;
-    }
-
-    .booking-panel > p {
-      margin-top: 12px;
-      color: var(--grey-300);
-      line-height: 1.65;
-    }
-
-    .booking-form {
-      margin-top: 28px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .field {
-      position: relative;
-    }
-
-    .field i {
-      position: absolute;
-      top: 50%;
-      left: 17px;
-      color: var(--grey-500);
-      transform: translateY(-50%);
-    }
-
-    .field input,
-    .field select,
-    .field textarea {
-      width: 100%;
-      min-height: 58px;
-      padding: 0 16px 0 47px;
-      border: 1px solid rgba(255, 255, 255, 0.13);
-      border-radius: 14px;
-      outline: 0;
-      background: rgba(255, 255, 255, 0.07);
-      color: white;
-      transition: 0.2s ease;
-    }
-
-    .field input::placeholder,
-    .field textarea::placeholder {
-      color: rgba(255, 255, 255, 0.55);
-    }
-
-    .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      border-color: var(--blue-light);
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.13);
-    }
-
-    .booking-submit {
-      width: 100%;
-      margin-top: 6px;
-      background: var(--red);
-      color: white;
-    }
-
-    .booking-note {
-      margin-top: 14px;
-      color: var(--grey-300);
-      font-size: 12px;
-      text-align: center;
-    }
-
-    /* Trust strip */
-
-    .trust-strip-wrap {
-      margin-top: -50px;
-      position: relative;
-      z-index: 5;
-    }
-
-    .trust-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow: hidden;
-      border-radius: 24px;
-      background: white;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .trust-item {
-      min-height: 138px;
-      padding: 26px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 17px;
-      border-right: 1px solid var(--grey-100);
-    }
-
-    .trust-item:last-child {
-      border-right: 0;
-    }
-
-    .trust-item-icon {
-      width: 54px;
-      height: 54px;
-      flex: 0 0 54px;
-      display: grid;
-      place-items: center;
-      border-radius: 17px;
-      background: rgba(8, 118, 225, 0.09);
-      color: var(--blue);
-      font-size: 22px;
-    }
-
-    .trust-item strong {
-      display: block;
-      font-family: "Manrope", sans-serif;
-      font-size: 20px;
-    }
-
-    .trust-item span {
-      display: block;
-      margin-top: 5px;
-      color: var(--grey-500);
-      font-size: 13px;
-    }
-
-    /* Services */
-
-    .services-header {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 50px;
-    }
-
-    .services-header .section-description {
-      max-width: 460px;
-      margin-bottom: 8px;
-    }
-
-    .services-grid {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 26px;
-    }
-
-    .service-card {
-      min-height: 410px;
-      padding: 34px;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius-lg);
-      color: white;
-      box-shadow: var(--shadow-card);
-      transition: 0.35s ease;
-    }
-
-    .service-card::before {
-      position: absolute;
-      inset: 0;
-      content: "";
-      background: linear-gradient(180deg, transparent 20%, rgba(5, 11, 20, 0.97) 100%);
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .service-card:hover .service-background {
-      transform: scale(1.06);
-    }
-
-    .service-background {
-      position: absolute;
-      inset: 0;
-      background-position: center;
-      background-size: cover;
-      transition: 0.5s ease;
-    }
-
-    .service-card-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .service-number {
-      color: var(--blue-light);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
-
-    .service-card h3 {
-      margin-top: 14px;
-      font-family: "Manrope", sans-serif;
-      font-size: 27px;
-    }
-
-    .service-card p {
-      margin-top: 12px;
-      color: rgba(255, 255, 255, 0.7);
-      line-height: 1.65;
-    }
-
-    .service-link {
-      margin-top: 22px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: white;
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    /* Experience section */
-
-    .experience {
-      overflow: hidden;
-      background: var(--navy-950);
-      color: white;
-    }
-
-    .experience-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      align-items: center;
-      gap: 80px;
-    }
-
-    .experience-image {
-      min-height: 680px;
-      position: relative;
-      border-radius: var(--radius-lg);
-      background:
-        linear-gradient(0deg, rgba(5, 11, 20, 0.25), transparent),
-        url("https://images.unsplash.com/photo-1613214150384-4f0f33f6524d?auto=format&fit=crop&w=1400&q=88");
-      background-position: center;
-      background-size: cover;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .experience-badge {
-      width: 190px;
-      height: 190px;
-      padding: 25px;
-      display: grid;
-      place-items: center;
-      position: absolute;
-      right: -35px;
-      bottom: 40px;
-      border: 8px solid var(--navy-950);
-      border-radius: 50%;
-      background: var(--red);
-      text-align: center;
-    }
-
-    .experience-badge strong {
-      display: block;
-      font-family: "Manrope", sans-serif;
-      font-size: 46px;
-      line-height: 1;
-    }
-
-    .experience-badge span {
-      display: block;
-      margin-top: 5px;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .experience .section-heading {
-      color: white;
-    }
-
-    .experience .section-description {
-      color: var(--grey-300);
-    }
-
-    .benefits {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .benefit {
-      padding: 24px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    .benefit i {
-      color: var(--blue-light);
-      font-size: 22px;
-    }
-
-    .benefit h3 {
-      margin-top: 17px;
-      font-family: "Manrope", sans-serif;
-      font-size: 18px;
-    }
-
-    .benefit p {
-      margin-top: 8px;
-      color: var(--grey-300);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    /* Process */
-
-    .process-grid {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    .process-card {
-      padding: 34px;
-      position: relative;
-      border: 1px solid var(--grey-100);
-      border-radius: var(--radius-md);
-      background: white;
-      box-shadow: 0 15px 40px rgba(7, 25, 45, 0.06);
-    }
-
-    .process-card::after {
-      width: 40px;
-      height: 1px;
-      position: absolute;
-      top: 58px;
-      right: -32px;
-      content: "";
-      background: var(--grey-100);
-    }
-
-    .process-card:last-child::after {
-      display: none;
-    }
-
-    .process-step {
-      width: 52px;
-      height: 52px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: var(--navy-900);
-      color: white;
-      font-family: "Manrope", sans-serif;
-      font-weight: 800;
-    }
-
-    .process-card h3 {
-      margin-top: 25px;
-      font-family: "Manrope", sans-serif;
-      font-size: 21px;
-    }
-
-    .process-card p {
-      margin-top: 10px;
-      color: var(--grey-500);
-      line-height: 1.65;
-    }
-
-    /* Gallery */
-
-    .gallery-grid {
-      margin-top: 65px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr 0.8fr;
-      grid-template-rows: 280px 280px;
-      gap: 18px;
-    }
-
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 22px;
-    }
-
-    .gallery-item:first-child {
-      grid-row: 1 / 3;
-    }
-
-    .gallery-item img {
-      height: 100%;
-      object-fit: cover;
-      transition: 0.5s ease;
-    }
-
-    .gallery-item::after {
-      position: absolute;
-      inset: 0;
-      content: "";
-      background: linear-gradient(0deg, rgba(5, 11, 20, 0.35), transparent);
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.06);
-    }
-
-    /* Reviews */
-
-    .reviews {
-      background: var(--navy-900);
-      color: white;
-    }
-
-    .reviews .section-heading {
-      color: white;
-    }
-
-    .reviews .section-description {
-      color: var(--grey-300);
-    }
-
-    .reviews-grid {
-      margin-top: 65px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .review-card {
-      padding: 34px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .review-stars {
-      color: #ffc247;
-      letter-spacing: 3px;
-    }
-
-    .review-card blockquote {
-      margin-top: 24px;
-      color: rgba(255, 255, 255, 0.83);
-      font-size: 17px;
-      line-height: 1.75;
-    }
-
-    .review-card footer {
-      margin-top: 25px;
-      color: var(--blue-light);
-      font-weight: 700;
-    }
-
-    .reviews-note {
-      margin-top: 30px;
-      color: var(--grey-300);
-      font-size: 13px;
-    }
-
-    /* FAQ */
-
-    .faq-grid {
-      margin-top: 60px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .faq-item {
-      overflow: hidden;
-      border: 1px solid var(--grey-100);
-      border-radius: 16px;
-      background: white;
-    }
-
-    .faq-question {
-      width: 100%;
-      padding: 24px 26px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border: 0;
-      background: white;
-      color: var(--text-dark);
-      font-weight: 800;
-      text-align: left;
-    }
-
-    .faq-question i {
-      transition: 0.25s ease;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      color: var(--grey-500);
-      line-height: 1.7;
-      transition: max-height 0.3s ease;
-    }
-
-    .faq-answer p {
-      padding: 0 26px 25px;
-    }
-
-    .faq-item.open .faq-answer {
-      max-height: 200px;
-    }
-
-    .faq-item.open .faq-question i {
-      transform: rotate(45deg);
-    }
-
-    /* Contact */
-
-    .contact {
-      background: var(--navy-950);
-      color: white;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 45px;
-    }
-
-    .contact-info {
-      padding: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-lg);
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    .contact-info .section-heading {
-      color: white;
-      font-size: clamp(38px, 4vw, 58px);
-    }
-
-    .contact-list {
-      margin-top: 40px;
-      display: grid;
-      gap: 18px;
-    }
-
-    .contact-list a,
-    .contact-list div {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      color: var(--grey-300);
-    }
-
-    .contact-list i {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 13px;
-      background: rgba(8, 118, 225, 0.15);
-      color: var(--blue-light);
-    }
-
-    .hours {
-      margin-top: 38px;
-      overflow: hidden;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .hours-row {
-      padding: 13px 0;
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      color: var(--grey-300);
-      font-size: 14px;
-    }
-
-    .hours-row strong {
-      color: white;
-    }
-
-    .map-card {
-      min-height: 720px;
-      overflow: hidden;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .map-card iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 720px;
-      border: 0;
-    }
-
-    /* Footer */
-
-    .footer {
-      padding: 55px 0 35px;
-      background: #030811;
-      color: var(--grey-300);
-    }
-
-    .footer-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      font-size: 14px;
-    }
-
-    .footer-bottom {
-      margin-top: 40px;
-      padding-top: 25px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 12px;
-    }
-
-    /* Mobile call bar */
-
-    .mobile-call-bar {
-      display: none;
-    }
-
-    /* Reveal animation */
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(35px);
-      transition:
-        opacity 0.75s ease,
-        transform 0.75s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Responsive */
-
-    @media (max-width: 1150px) {
-      .nav-links {
-        display: none;
-      }
-
-      .menu-button {
-        display: grid;
-      }
-
-      .header-action {
-        margin-left: auto;
-      }
-
-      .hero-inner {
-        grid-template-columns: 1fr;
-        padding-top: 170px;
-      }
-
-      .booking-panel {
-        max-width: 620px;
-      }
-
-      .trust-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .trust-item:nth-child(2) {
-        border-right: 0;
-      }
-
-      .services-grid,
-      .reviews-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .experience-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .experience-image {
-        max-width: 850px;
-      }
-
-      .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .process-card::after {
-        display: none;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .section {
-        padding: 85px 0;
-      }
-
-      .navbar {
-        min-height: 82px;
-      }
-
-      .brand-symbol {
-        width: 47px;
-        height: 47px;
-      }
-
-      .brand-copy strong {
-        font-size: 18px;
-      }
-
-      .header-action {
-        display: none;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .hero-inner {
-        min-height: auto;
-        padding-top: 140px;
-        padding-bottom: 90px;
-      }
-
-      .hero h1 {
-        font-size: 53px;
-        letter-spacing: -3px;
-      }
-
-      .hero-description {
-        font-size: 16px;
-      }
-
-      .booking-panel {
-        padding: 26px;
-      }
-
-      .trust-strip-wrap {
-        margin-top: -25px;
-      }
-
-      .trust-strip {
-        grid-template-columns: 1fr;
-      }
-
-      .trust-item {
-        justify-content: flex-start;
-        border-right: 0;
-        border-bottom: 1px solid var(--grey-100);
-      }
-
-      .trust-item:last-child {
-        border-bottom: 0;
-      }
-
-      .services-header,
-      .footer-top,
-      .footer-bottom {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .services-grid,
-      .reviews-grid,
-      .process-grid,
-      .benefits {
-        grid-template-columns: 1fr;
-      }
-
-      .experience-image {
-        min-height: 500px;
-      }
-
-      .experience-badge {
-        width: 145px;
-        height: 145px;
-        right: -10px;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 280px);
-      }
-
-      .gallery-item:first-child {
-        grid-row: auto;
-      }
-
-      .contact-info {
-        padding: 30px;
-      }
-
-      .map-card,
-      .map-card iframe {
-        min-height: 500px;
-      }
-
-      .mobile-call-bar {
-        width: calc(100% - 24px);
-        min-height: 62px;
-        padding: 0 12px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        position: fixed;
-        bottom: 12px;
-        left: 12px;
-        z-index: 1200;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 17px;
-        background: rgba(5, 11, 20, 0.96);
-        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-        backdrop-filter: blur(18px);
-      }
-
-      .mobile-call-bar a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        color: white;
-        font-size: 13px;
-        font-weight: 800;
-      }
-
-      .mobile-call-bar a:first-child {
-        border-right: 1px solid rgba(255, 255, 255, 0.12);
-      }
-    }
-
-    @media (max-width: 430px) {
-      .hero h1 {
-        font-size: 45px;
-      }
-
-      .hero-buttons {
-        display: grid;
-      }
-
-      .button {
-        width: 100%;
-      }
-
-      .section-heading {
-        font-size: 39px;
-        letter-spacing: -1.7px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Header -->
 
-  <header class="site-header" id="header">
-    <nav class="navbar">
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
 
       <a href="#home" class="brand">
-        <div class="brand-symbol">
-          <span>TG</span>
+        <div class="brand-mark">
+          TG
         </div>
 
         <div class="brand-copy">
           <strong>The Garage Navan</strong>
-          <small>Car Service</small>
+          <span>Professional Car Service</span>
         </div>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">Why Us</a></li>
-        <li><a href="#gallery">Workshop</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">Why Us</a>
+        <a href="#gallery">Workshop</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <a href="tel:0469028548" class="header-action">
+      <a href="tel:0469028548" class="header-phone">
         <i class="fa-solid fa-phone"></i>
         046 902 8548
       </a>
 
-      <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
         <i class="fa-solid fa-bars"></i>
       </button>
 
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">Why Us</a>
+      <a href="#gallery">Workshop</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -2015,44 +92,45 @@ body{
     <!-- Hero -->
 
     <section class="hero" id="home">
-      <div class="container hero-inner">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-layout">
 
         <div class="hero-content reveal">
 
-          <p class="hero-kicker">
-            <span></span>
-            Professional Vehicle Care in Navan
+          <p class="eyebrow">
+            Professional vehicle care in Navan
           </p>
 
           <h1>
-            Precision service.
-            <em>Complete confidence.</em>
+            Confidence in
+            <span>every journey.</span>
           </h1>
 
           <p class="hero-description">
             Professional diagnostics, servicing and mechanical repairs for
-            cars, vans and 4x4s. Built around clear communication, quality
-            workmanship and dependable local service.
+            cars, vans and 4x4s, delivered with clear communication and
+            dependable local service.
           </p>
 
-          <ul class="hero-features">
+          <ul class="hero-points">
             <li>
               <i class="fa-solid fa-circle-check"></i>
-              Advanced diagnostics
+              Advanced vehicle diagnostics
             </li>
 
             <li>
               <i class="fa-solid fa-circle-check"></i>
-              All makes and models
+              Servicing for all makes and models
             </li>
 
             <li>
               <i class="fa-solid fa-circle-check"></i>
-              Quality parts
+              Quality parts and workmanship
             </li>
           </ul>
 
-          <div class="hero-buttons">
+          <div class="hero-actions">
             <a href="#booking" class="button button-primary">
               <i class="fa-regular fa-calendar-check"></i>
               Request a Service
@@ -2064,74 +142,85 @@ body{
             </a>
           </div>
 
-          <div class="hero-proof">
-            <div class="proof-avatars">
-              <span><i class="fa-solid fa-car"></i></span>
-              <span><i class="fa-solid fa-wrench"></i></span>
-              <span><i class="fa-solid fa-shield-halved"></i></span>
+          <div class="hero-trust">
+            <div>
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Professional standards</span>
             </div>
 
-            <div class="proof-copy">
-              <strong>Local expertise. Professional standards.</strong>
-              <small>Serving drivers throughout Navan and County Meath.</small>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Serving Navan & Meath</span>
             </div>
           </div>
 
         </div>
 
-        <aside class="booking-panel reveal" id="booking">
+        <!-- Booking form -->
+
+        <aside class="booking-card reveal" id="booking">
 
           <div class="booking-icon">
             <i class="fa-regular fa-calendar-check"></i>
           </div>
 
-          <h2>Request a booking</h2>
-
-          <p>
-            Send your details and contact the garage to confirm your appointment.
+          <p class="booking-label">
+            Quick enquiry
           </p>
 
-          <form class="booking-form" id="bookingForm">
+          <h2>
+            Request a booking
+          </h2>
 
-            <div class="field">
-              <i class="fa-regular fa-user"></i>
+          <p class="booking-intro">
+            Send your details and contact the garage to confirm your
+            appointment.
+          </p>
+
+          <form id="bookingForm">
+
+            <label>
+              <span>Your name</span>
+
               <input
                 type="text"
                 name="name"
-                placeholder="Your name"
+                placeholder="Enter your name"
                 required
               >
-            </div>
+            </label>
 
-            <div class="field">
-              <i class="fa-solid fa-phone"></i>
+            <label>
+              <span>Phone number</span>
+
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone number"
+                placeholder="Enter your phone number"
                 required
               >
-            </div>
+            </label>
 
-            <div class="field">
-              <i class="fa-solid fa-car-side"></i>
+            <label>
+              <span>Vehicle</span>
+
               <input
                 type="text"
                 name="vehicle"
-                placeholder="Vehicle make and model"
+                placeholder="Make and model"
               >
-            </div>
+            </label>
 
-            <button type="submit" class="button booking-submit">
+            <button type="submit" class="button button-primary form-button">
               Request Appointment
               <i class="fa-solid fa-arrow-right"></i>
             </button>
 
           </form>
 
-          <p class="booking-note">
-            Your booking is confirmed only after speaking with the garage.
-          </p>
+          <small>
+            A request is not confirmed until you speak with the garage.
+          </small>
 
         </aside>
 
@@ -2140,96 +229,81 @@ body{
 
     <!-- Trust strip -->
 
-    <div class="trust-strip-wrap">
-      <div class="container trust-strip reveal">
+    <section class="trust-section">
+      <div class="container trust-grid">
 
-        <article class="trust-item">
-          <div class="trust-item-icon">
-            <i class="fa-solid fa-microchip"></i>
-          </div>
+        <article class="trust-card reveal">
+          <i class="fa-solid fa-microchip"></i>
 
           <div>
-            <strong>Diagnostics</strong>
-            <span>Modern fault finding</span>
+            <h3>Modern diagnostics</h3>
+            <p>Accurate vehicle fault finding.</p>
           </div>
         </article>
 
-        <article class="trust-item">
-          <div class="trust-item-icon">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
+        <article class="trust-card reveal">
+          <i class="fa-solid fa-car-side"></i>
 
           <div>
-            <strong>Quality focus</strong>
-            <span>Professional workmanship</span>
+            <h3>All makes</h3>
+            <p>Cars, vans and 4x4s.</p>
           </div>
         </article>
 
-        <article class="trust-item">
-          <div class="trust-item-icon">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
+        <article class="trust-card reveal">
+          <i class="fa-solid fa-shield-halved"></i>
 
           <div>
-            <strong>All makes</strong>
-            <span>Cars, vans and 4x4s</span>
+            <h3>Quality focused</h3>
+            <p>Professional workmanship.</p>
           </div>
         </article>
 
-        <article class="trust-item">
-          <div class="trust-item-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
+        <article class="trust-card reveal">
+          <i class="fa-solid fa-location-dot"></i>
 
           <div>
-            <strong>Local service</strong>
-            <span>Proudly based in Navan</span>
+            <h3>Local service</h3>
+            <p>Proudly based in Navan.</p>
           </div>
         </article>
 
       </div>
-    </div>
+    </section>
 
     <!-- Services -->
 
-    <section class="section section-light" id="services">
+    <section class="section services-section" id="services">
       <div class="container">
 
-        <div class="services-header reveal">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our expertise</p>
 
-          <div>
-            <span class="eyebrow">Our expertise</span>
+          <h2>
+            Complete care for your vehicle.
+          </h2>
 
-            <h2 class="section-heading">
-              Everything your vehicle needs.
-            </h2>
-          </div>
-
-          <p class="section-description">
-            From routine maintenance to advanced fault finding, our services
-            are designed to keep your vehicle safe, dependable and performing
-            at its best.
+          <p>
+            From regular maintenance to fault diagnosis and essential
+            repairs, our services help keep your vehicle dependable and
+            road-ready.
           </p>
-
         </div>
 
         <div class="services-grid">
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-one"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">01</span>
+            <div class="service-content">
+              <span>01</span>
               <h3>Vehicle servicing</h3>
+
               <p>
-                Professional routine and scheduled servicing for all makes
-                and models.
+                Routine and scheduled servicing for cars, vans and 4x4s.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2237,20 +311,18 @@ body{
           </article>
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-two"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">02</span>
+            <div class="service-content">
+              <span>02</span>
               <h3>Diagnostics</h3>
+
               <p>
-                Modern diagnostic equipment to identify warning lights,
-                electrical issues and mechanical faults.
+                Modern checks for warning lights, electrical problems and
+                mechanical faults.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2258,20 +330,17 @@ body{
           </article>
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-three"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">03</span>
+            <div class="service-content">
+              <span>03</span>
               <h3>Brakes and safety</h3>
+
               <p>
-                Brake checks, repairs and replacement work to help keep your
-                vehicle safe on the road.
+                Brake inspections, repair work and replacement services.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2279,20 +348,17 @@ body{
           </article>
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-four"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">04</span>
+            <div class="service-content">
+              <span>04</span>
               <h3>Tyres and wheels</h3>
+
               <p>
-                Tyre inspection and maintenance advice for grip, comfort and
-                road safety.
+                Tyre inspection and vehicle safety support.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2300,20 +366,17 @@ body{
           </article>
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e1e?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-five"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">05</span>
+            <div class="service-content">
+              <span>05</span>
               <h3>NCT preparation</h3>
+
               <p>
-                Pre-test vehicle checks designed to identify potential issues
-                before your NCT.
+                Checks designed to identify possible issues before your NCT.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2321,20 +384,17 @@ body{
           </article>
 
           <article class="service-card reveal">
-            <div
-              class="service-background"
-              style="background-image:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=85');"
-            ></div>
+            <div class="service-image service-six"></div>
 
-            <div class="service-card-content">
-              <span class="service-number">06</span>
+            <div class="service-content">
+              <span>06</span>
               <h3>Mechanical repairs</h3>
+
               <p>
-                Dependable mechanical repair work with clear explanations
-                before work begins.
+                Reliable repairs with straightforward explanations.
               </p>
 
-              <a href="#contact" class="service-link">
+              <a href="#contact">
                 Enquire
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -2346,124 +406,61 @@ body{
       </div>
     </section>
 
-    <!-- Why choose us -->
+    <!-- About -->
 
-    <section class="section experience" id="about">
-      <div class="container experience-grid">
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
 
-        <div class="experience-image reveal">
-          <div class="experience-badge">
-            <div>
-              <strong>Local</strong>
-              <span>Vehicle specialists</span>
-            </div>
+        <div class="about-image reveal">
+          <div class="about-badge">
+            <i class="fa-solid fa-wrench"></i>
+            <span>Local vehicle specialists</span>
           </div>
         </div>
 
-        <div class="experience-content reveal">
+        <div class="about-content reveal">
 
-          <span class="eyebrow">Why choose us</span>
-
-          <h2 class="section-heading">
-            Vehicle care built around trust.
-          </h2>
-
-          <p class="section-description">
-            The Garage Navan combines modern equipment with friendly,
-            straightforward customer service. You receive clear advice,
-            professional work and support from a local team.
+          <p class="eyebrow">
+            Why choose us
           </p>
 
-          <div class="benefits">
+          <h2>
+            Professional care. Honest communication.
+          </h2>
 
-            <article class="benefit">
+          <p>
+            The Garage Navan combines modern equipment with straightforward
+            local service. Customers receive clear advice, professional
+            workmanship and support throughout the repair process.
+          </p>
+
+          <div class="benefits-grid">
+
+            <article>
               <i class="fa-solid fa-user-gear"></i>
-              <h3>Experienced technicians</h3>
-              <p>
-                Careful inspection and professional workmanship for every
-                vehicle.
-              </p>
+              <h3>Professional technicians</h3>
+              <p>Careful vehicle inspection and repair work.</p>
             </article>
 
-            <article class="benefit">
+            <article>
               <i class="fa-solid fa-comments"></i>
-              <h3>Clear communication</h3>
-              <p>
-                Straightforward explanations without unnecessary technical
-                language.
-              </p>
+              <h3>Clear explanations</h3>
+              <p>Understand the recommended work before it begins.</p>
             </article>
 
-            <article class="benefit">
+            <article>
               <i class="fa-solid fa-laptop-code"></i>
-              <h3>Modern diagnostics</h3>
-              <p>
-                Technology that helps locate faults quickly and accurately.
-              </p>
+              <h3>Modern equipment</h3>
+              <p>Technology that supports accurate diagnosis.</p>
             </article>
 
-            <article class="benefit">
-              <i class="fa-solid fa-location-dot"></i>
-              <h3>Local support</h3>
-              <p>
-                Convenient service for drivers across Navan and County Meath.
-              </p>
+            <article>
+              <i class="fa-solid fa-handshake"></i>
+              <h3>Local customer care</h3>
+              <p>Friendly support for drivers across Navan.</p>
             </article>
 
           </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Process -->
-
-    <section class="section section-white">
-      <div class="container">
-
-        <span class="eyebrow reveal">Simple process</span>
-
-        <h2 class="section-heading reveal">
-          From booking to back on the road.
-        </h2>
-
-        <div class="process-grid">
-
-          <article class="process-card reveal">
-            <div class="process-step">01</div>
-            <h3>Contact us</h3>
-            <p>
-              Call the garage or send a booking request with your vehicle
-              details.
-            </p>
-          </article>
-
-          <article class="process-card reveal">
-            <div class="process-step">02</div>
-            <h3>Vehicle inspection</h3>
-            <p>
-              Your vehicle is checked so the problem and required work can be
-              understood.
-            </p>
-          </article>
-
-          <article class="process-card reveal">
-            <div class="process-step">03</div>
-            <h3>Clear recommendation</h3>
-            <p>
-              The garage explains the findings and recommended work before
-              proceeding.
-            </p>
-          </article>
-
-          <article class="process-card reveal">
-            <div class="process-step">04</div>
-            <h3>Drive with confidence</h3>
-            <p>
-              Collect your vehicle and get safely back on the road.
-            </p>
-          </article>
 
         </div>
 
@@ -2472,189 +469,116 @@ body{
 
     <!-- Gallery -->
 
-    <section class="section section-light" id="gallery">
+    <section class="section gallery-section" id="gallery">
       <div class="container">
 
-        <span class="eyebrow reveal">Inside the workshop</span>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Inside the workshop</p>
 
-        <h2 class="section-heading reveal">
-          Professional care in every detail.
-        </h2>
+          <h2>
+            Precision in every detail.
+          </h2>
+        </div>
 
         <div class="gallery-grid">
 
-          <figure class="gallery-item reveal">
+          <figure class="gallery-large reveal">
             <img
-              src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1400&q=88"
-              alt="Mechanic working in a professional garage"
+              src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1600&q=90"
+              alt="Professional mechanic working in a garage"
               loading="lazy"
             >
           </figure>
 
-          <figure class="gallery-item reveal">
+          <figure class="reveal">
             <img
-              src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=88"
+              src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=90"
               alt="Vehicle servicing"
               loading="lazy"
             >
           </figure>
 
-          <figure class="gallery-item reveal">
+          <figure class="reveal">
             <img
-              src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e1e?auto=format&fit=crop&w=900&q=88"
-              alt="Automotive workshop"
+              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1000&q=90"
+              alt="Automotive tools and diagnostics"
               loading="lazy"
             >
           </figure>
 
-          <figure class="gallery-item reveal">
+          <figure class="reveal">
             <img
-              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=88"
-              alt="Vehicle diagnostics and tools"
+              src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=1000&q=90"
+              alt="Vehicle brake service"
               loading="lazy"
             >
           </figure>
 
-          <figure class="gallery-item reveal">
+          <figure class="reveal">
             <img
-              src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=900&q=88"
-              alt="Car brake service"
+              src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e1e?auto=format&fit=crop&w=1000&q=90"
+              alt="Professional automotive workshop"
               loading="lazy"
             >
           </figure>
 
         </div>
-
-      </div>
-    </section>
-
-    <!-- Reviews -->
-
-    <section class="section reviews">
-      <div class="container">
-
-        <span class="eyebrow reveal">Customer experience</span>
-
-        <h2 class="section-heading reveal">
-          Service drivers can depend on.
-        </h2>
-
-        <p class="section-description reveal">
-          Replace the example comments below with verified customer reviews
-          before presenting the finished website to the business.
-        </p>
-
-        <div class="reviews-grid">
-
-          <article class="review-card reveal">
-            <div class="review-stars">★★★★★</div>
-
-            <blockquote>
-              “Professional communication, helpful advice and a very smooth
-              experience from booking to collection.”
-            </blockquote>
-
-            <footer>Example review</footer>
-          </article>
-
-          <article class="review-card reveal">
-            <div class="review-stars">★★★★★</div>
-
-            <blockquote>
-              “The work was explained clearly and the service felt honest,
-              efficient and dependable.”
-            </blockquote>
-
-            <footer>Example review</footer>
-          </article>
-
-          <article class="review-card reveal">
-            <div class="review-stars">★★★★★</div>
-
-            <blockquote>
-              “Friendly local garage with a professional approach. I would
-              confidently return.”
-            </blockquote>
-
-            <footer>Example review</footer>
-          </article>
-
-        </div>
-
-        <p class="reviews-note">
-          Example wording only — do not publish these as genuine customer
-          reviews.
-        </p>
 
       </div>
     </section>
 
     <!-- FAQ -->
 
-    <section class="section section-white" id="faq">
+    <section class="section faq-section" id="faq">
       <div class="container">
 
-        <span class="eyebrow reveal">Frequently asked questions</span>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Common questions</p>
 
-        <h2 class="section-heading reveal">
-          Helpful answers before you book.
-        </h2>
+          <h2>
+            Helpful information before you book.
+          </h2>
+        </div>
 
-        <div class="faq-grid">
+        <div class="faq-list">
 
           <article class="faq-item reveal">
-            <button class="faq-question">
-              Do you service all makes and models?
+            <button type="button" class="faq-question">
+              Do you service all vehicle makes?
               <i class="fa-solid fa-plus"></i>
             </button>
 
             <div class="faq-answer">
               <p>
-                The website presents the garage as servicing a wide range of
-                cars, vans and 4x4s. Confirm any model-specific requirements
-                directly with the garage.
+                Contact the garage with your vehicle make and model to confirm
+                the required service.
               </p>
             </div>
           </article>
 
           <article class="faq-item reveal">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               How do I request an appointment?
               <i class="fa-solid fa-plus"></i>
             </button>
 
             <div class="faq-answer">
               <p>
-                Use the booking form or call 046 902 8548. A request is not a
-                confirmed appointment until the garage contacts you.
+                Complete the booking form or call 046 902 8548. Your booking
+                is confirmed after speaking directly with the garage.
               </p>
             </div>
           </article>
 
           <article class="faq-item reveal">
-            <button class="faq-question">
-              Can you help prepare my vehicle for the NCT?
+            <button type="button" class="faq-question">
+              Can you help prepare a car for the NCT?
               <i class="fa-solid fa-plus"></i>
             </button>
 
             <div class="faq-answer">
               <p>
-                Contact the garage to discuss an inspection and any concerns
-                you have before your test.
-              </p>
-            </div>
-          </article>
-
-          <article class="faq-item reveal">
-            <button class="faq-question">
-              What information should I provide when booking?
-              <i class="fa-solid fa-plus"></i>
-            </button>
-
-            <div class="faq-answer">
-              <p>
-                Provide your name, phone number, vehicle make and model, and a
-                short description of the issue or service required.
+                Contact the garage to discuss vehicle checks before your NCT.
               </p>
             </div>
           </article>
@@ -2666,79 +590,61 @@ body{
 
     <!-- Contact -->
 
-    <section class="section contact" id="contact">
-      <div class="container contact-grid">
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
 
-        <div class="contact-info reveal">
+        <div class="contact-content reveal">
 
-          <span class="eyebrow">Contact the garage</span>
-
-          <h2 class="section-heading">
-            Ready to book your vehicle?
-          </h2>
-
-          <p class="section-description">
-            Call during opening hours or use the booking request form above.
+          <p class="eyebrow">
+            Contact
           </p>
 
-          <div class="contact-list">
+          <h2>
+            Ready to discuss your vehicle?
+          </h2>
+
+          <p>
+            Call during opening hours or send a booking request using the form
+            above.
+          </p>
+
+          <div class="contact-details">
 
             <a href="tel:0469028548">
               <i class="fa-solid fa-phone"></i>
-              <span>046 902 8548</span>
+
+              <div>
+                <span>Phone</span>
+                <strong>046 902 8548</strong>
+              </div>
             </a>
 
             <div>
               <i class="fa-solid fa-location-dot"></i>
-              <span>The Garage Navan, County Meath</span>
-            </div>
 
-            <a
-              href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiY7POupsCVAxUAAAAAHQAAAAAQDA..i&sca_esv=7e94c3f16104a63f&pvq=Cg0vZy8xMWJicmsya2pnIhcKEWJvc2NoIGNhciBzZXJ2aWNlEAIYAw&lqi=ChFib3NjaCBjYXIgc2VydmljZSIDiAEBSI6MxfiqqoCACFofEAAQARACGAAYARgCIhFib3NjaCBjYXIgc2VydmljZZIBEGF1dG9fcmVwYWlyX3Nob3A&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=ie&sa=X&ftid=0x48675b5d7eb30fb5:0x67ad5c70c1a7117f"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fa-solid fa-diamond-turn-right"></i>
-              <span>Open directions in Google Maps</span>
-            </a>
+              <div>
+                <span>Location</span>
+                <strong>Navan, County Meath</strong>
+              </div>
+            </div>
 
           </div>
 
-          <div class="hours">
+          <div class="opening-hours">
 
-            <div class="hours-row">
-              <strong>Monday</strong>
-              <span>9:00 AM – 6:00 PM</span>
+            <div>
+              <span>Monday – Friday</span>
+              <strong>9:00 AM – 6:00 PM</strong>
             </div>
 
-            <div class="hours-row">
-              <strong>Tuesday</strong>
-              <span>9:00 AM – 6:00 PM</span>
+            <div>
+              <span>Saturday</span>
+              <strong>Closed</strong>
             </div>
 
-            <div class="hours-row">
-              <strong>Wednesday</strong>
-              <span>9:00 AM – 6:00 PM</span>
-            </div>
-
-            <div class="hours-row">
-              <strong>Thursday</strong>
-              <span>9:00 AM – 6:00 PM</span>
-            </div>
-
-            <div class="hours-row">
-              <strong>Friday</strong>
-              <span>9:00 AM – 6:00 PM</span>
-            </div>
-
-            <div class="hours-row">
-              <strong>Saturday</strong>
-              <span>Closed</span>
-            </div>
-
-            <div class="hours-row">
-              <strong>Sunday</strong>
-              <span>Closed</span>
+            <div>
+              <span>Sunday</span>
+              <strong>Closed</strong>
             </div>
 
           </div>
@@ -2748,7 +654,7 @@ body{
         <div class="map-card reveal">
           <iframe
             src="https://www.google.com/maps?q=Bosch%20Car%20Service%20The%20Garage%20Navan&output=embed"
-            title="The Garage Navan map"
+            title="The Garage Navan location"
             loading="lazy"
             allowfullscreen
           ></iframe>
@@ -2761,48 +667,31 @@ body{
 
   <!-- Footer -->
 
-  <footer class="footer">
-    <div class="container">
+  <footer class="site-footer">
+    <div class="container footer-inner">
 
-      <div class="footer-top">
+      <a href="#home" class="brand">
+        <div class="brand-mark">
+          TG
+        </div>
 
-        <a href="#home" class="brand">
-          <div class="brand-symbol">
-            <span>TG</span>
-          </div>
+        <div class="brand-copy">
+          <strong>The Garage Navan</strong>
+          <span>Professional Car Service</span>
+        </div>
+      </a>
 
-          <div class="brand-copy">
-            <strong>The Garage Navan</strong>
-            <small>Car Service</small>
-          </div>
-        </a>
-
-        <nav class="footer-links">
-          <a href="#services">Services</a>
-          <a href="#about">Why Us</a>
-          <a href="#gallery">Workshop</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-      </div>
-
-      <div class="footer-bottom">
-        <span>
-          © <span id="year"></span> The Garage Navan. All rights reserved.
-        </span>
-
-        <span>
-          Website concept for client presentation.
-        </span>
-      </div>
+      <p>
+        © <span id="currentYear"></span> The Garage Navan.
+        All rights reserved.
+      </p>
 
     </div>
   </footer>
 
   <!-- Mobile buttons -->
 
-  <div class="mobile-call-bar">
+  <div class="mobile-actions">
     <a href="tel:0469028548">
       <i class="fa-solid fa-phone"></i>
       Call Now
@@ -2814,73 +703,6 @@ body{
     </a>
   </div>
 
-  <script>
-    const header = document.getElementById("header");
-    const bookingForm = document.getElementById("bookingForm");
-    const revealElements = document.querySelectorAll(".reveal");
-    const faqItems = document.querySelectorAll(".faq-item");
-    const menuButton = document.getElementById("menuButton");
-
-    // Header background
-    window.addEventListener("scroll", () => {
-      header.classList.toggle("scrolled", window.scrollY > 30);
-    });
-
-    // Reveal animations
-    const revealObserver = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.12
-      }
-    );
-
-    revealElements.forEach(element => {
-      revealObserver.observe(element);
-    });
-
-    // FAQ
-    faqItems.forEach(item => {
-      const button = item.querySelector(".faq-question");
-
-      button.addEventListener("click", () => {
-        const isOpen = item.classList.contains("open");
-
-        faqItems.forEach(faq => faq.classList.remove("open"));
-
-        if (!isOpen) {
-          item.classList.add("open");
-        }
-      });
-    });
-
-    // Demo booking form
-    bookingForm.addEventListener("submit", event => {
-      event.preventDefault();
-
-      alert(
-        "Your booking request has been prepared. Please call 046 902 8548 to confirm the appointment."
-      );
-
-      bookingForm.reset();
-    });
-
-    // Mobile menu message
-    menuButton.addEventListener("click", () => {
-      document.getElementById("services").scrollIntoView({
-        behavior: "smooth"
-      });
-    });
-
-    // Current year
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
