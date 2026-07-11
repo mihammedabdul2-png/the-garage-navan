@@ -1459,7 +1459,7 @@ button,
 }
 
 /* Reduce animation for accessibility */
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) 
   *,
   *::before,
   *::after {
