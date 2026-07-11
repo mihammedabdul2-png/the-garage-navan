@@ -3,99 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Garage Navan | Vehicle Servicing & Repairs</title>
+
+  <title>The Garage Navan | Car Servicing & Repairs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
+<header class="site-header">
   <nav class="navbar">
-    <div class="brand">
-  <div class="brand-icon">TG</div>
-  <div>
-    <h2>The Garage Navan</h2>
-    <span>Car Service</span>
-  </div>
-</div>
+
+    <a href="#home" class="brand">
+      <div class="brand-mark">TG</div>
+
+      <div class="brand-text">
+        <strong>The Garage Navan</strong>
+        <span>Car Service</span>
+      </div>
+    </a>
 
     <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <a href="tel:0469028548" class="phone-btn">046 902 8548</a>
+    <a href="tel:0469028548" class="header-phone">
+      046 902 8548
+    </a>
+
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-left">
-    <p class="welcome">Welcome to The Garage Navan</p>
+<main>
 
-    <h1>
-      Professional Vehicle
-      <span>Servicing & Repairs</span>
-    </h1>
+  <section class="hero" id="home">
 
-    <p class="subtitle">
-      Trusted Bosch Car Service Partner offering diagnostics, servicing,
-      brakes, tyres and repairs for all makes and models.
-    </p>
+    <div class="hero-content">
 
-    <div class="checks">
-      <p>✓ Dealer level diagnostics</p>
-      <p>✓ All makes & models</p>
-      <p>✓ Quality parts guaranteed</p>
+      <p class="eyebrow">Welcome to The Garage Navan</p>
+
+      <h1>
+        Professional Vehicle
+        <span>Servicing & Repairs</span>
+      </h1>
+
+      <p class="hero-description">
+        Trusted vehicle diagnostics, servicing, brakes, tyres and repairs
+        for all makes and models in Navan.
+      </p>
+
+      <ul class="hero-features">
+        <li>Dealer-level diagnostics</li>
+        <li>All makes and models</li>
+        <li>Quality parts and workmanship</li>
+      </ul>
+
+      <div class="hero-actions">
+        <a href="#booking" class="button button-primary">
+          Book a Service
+        </a>
+
+        <a href="tel:0469028548" class="button button-secondary">
+          Call Now
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <span>★ Trusted local garage</span>
+        <span>Professional diagnostics</span>
+        <span>Serving Navan & Meath</span>
+      </div>
+
     </div>
 
-    <div class="hero-buttons">
-      <a href="#contact" class="btn red">Book a Service</a>
-      <a href="tel:0469028548" class="btn outline">Call Now</a>
+    <div class="hero-visual">
+
+      <form class="booking-card" id="booking">
+
+        <p class="booking-label">Quick booking</p>
+
+        <h2>Book Your Service</h2>
+
+        <p class="booking-description">
+          Send your details and the garage can contact you.
+        </p>
+
+        <label>
+          <span>Your name</span>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </label>
+
+        <label>
+          <span>Phone number</span>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+        </label>
+
+        <label>
+          <span>Vehicle</span>
+          <input type="text" name="vehicle" placeholder="Vehicle Make / Model">
+        </label>
+
+        <button type="submit">
+          Request Appointment
+        </button>
+
+      </form>
+
     </div>
-  </div>
-  <div class="trust-badges">
-  <span>★★★★★ 4.9 Google Rating</span>
-  <span>Bosch Car Service Partner</span>
-  <span>Serving Navan & Meath</span>
-</div>
 
-  <div class="hero-right">
-  <div class="booking-card">
-    <span>Quick Booking</span>
-    <h3>Book Your Service</h3>
+  </section>
 
-    <input type="text" placeholder="Your Name">
-    <input type="tel" placeholder="Phone Number">
-    <input type="text" placeholder="Vehicle Make / Model">
+  <section class="stats">
 
-    <button>Book Appointment</button>
-  </div>
-</div>
-</section>
+    <article>
+      <strong>20+</strong>
+      <span>Years Experience</span>
+    </article>
 
-<section class="stats">
-  <div>
-    <h3>20+</h3>
-    <p>Years Experience</p>
-  </div>
+    <article>
+      <strong>100%</strong>
+      <span>Quality Focus</span>
+    </article>
 
-  <div>
-    <h3>100%</h3>
-    <p>Quality Guarantee</p>
-  </div>
+    <article>
+      <strong>All Makes</strong>
+      <span>Cars, Vans & 4x4s</span>
+    </article>
 
-  <div>
-    <h3>All Makes</h3>
-    <p>Cars, Vans & 4x4s</p>
-  </div>
+    <article>
+      <strong>Local</strong>
+      <span>Proudly Serving Navan</span>
+    </article>
 
-  <div>
-    <h3>Local</h3>
-    <p>Proudly Serving Navan</p>
-  </div>
-</section>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
