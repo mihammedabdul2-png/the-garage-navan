@@ -1467,14 +1467,3 @@ button,
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-}
-section,
-.hero,
-.hero-content,
-.hero-text,
-.hero-image,
-main {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
-}

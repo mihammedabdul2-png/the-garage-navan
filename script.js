@@ -1,253 +1,135 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector("header");
-  const menuButton = document.querySelector(
-    ".menu-toggle, .mobile-menu-button, .hamburger"
-  );
-  const navigation = document.querySelector(
-    "nav, .nav-links, .navigation"
-  );
-  const navigationLinks = document.querySelectorAll(
-    'nav a[href^="#"], .nav-links a[href^="#"]'
-  );
-  const revealElements = document.querySelectorAll(
-  ".service-card, .feature-card, .testimonial-card, .faq-item"
-  );
+const siteHeader = document.getElementById("siteHeader");
+const menuButton = document.getElementById("menuButton");
+const mobileNav = document.getElementById("mobileNav");
+const bookingForm = document.getElementById("bookingForm");
+const faqItems = document.querySelectorAll(".faq-item");
+const revealElements = document.querySelectorAll(".reveal");
+const currentYear = document.getElementById("currentYear");
 
-  /*
-  ========================================
-  HEADER SCROLL EFFECT
-  ========================================
-  */
+/* Header effect when scrolling */
 
-  function updateHeader() {
-    if (!header) return;
+function updateHeader() {
+  if (!siteHeader) return;
 
-    if (window.scrollY > 40) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  }
+  siteHeader.classList.toggle("scrolled", window.scrollY > 30);
+}
 
-  updateHeader();
-  window.addEventListener("scroll", updateHeader);
+updateHeader();
+window.addEventListener("scroll", updateHeader);
 
-  /*
-  ========================================
-  MOBILE NAVIGATION
-  ========================================
-  */
+/* Mobile navigation */
 
-  if (menuButton && navigation) {
-    menuButton.addEventListener("click", () => {
-      const menuIsOpen = navigation.classList.toggle("active");
+if (menuButton && mobileNav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = mobileNav.classList.toggle("open");
 
-      menuButton.classList.toggle("active", menuIsOpen);
-      document.body.classList.toggle("menu-open", menuIsOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
 
-      menuButton.setAttribute(
-        "aria-expanded",
-        menuIsOpen ? "true" : "false"
-      );
-    });
-  }
+    menuButton.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark"></i>'
+      : '<i class="fa-solid fa-bars"></i>';
+  });
 
-  /*
-  ========================================
-  SMOOTH SCROLLING
-  ========================================
-  */
-
-  navigationLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const targetID = link.getAttribute("href");
-
-      if (!targetID || targetID === "#") return;
-
-      const targetSection = document.querySelector(targetID);
-
-      if (!targetSection) return;
-
-      event.preventDefault();
-
-      const headerHeight = header ? header.offsetHeight : 0;
-      const targetPosition =
-        targetSection.getBoundingClientRect().top +
-        window.scrollY -
-        headerHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-
-      if (navigation) {
-        navigation.classList.remove("active");
-      }
-
-      if (menuButton) {
-        menuButton.classList.remove("active");
-        menuButton.setAttribute("aria-expanded", "false");
-      }
-
+  mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("open");
       document.body.classList.remove("menu-open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
     });
   });
 
-  /*
-  ========================================
-  SCROLL REVEAL ANIMATIONS
-  ========================================
-  if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 720) {
+      mobileNav.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+  });
+}
 
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+/* Reveal animations */
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
       });
     },
     {
-      threshold: 0.1,
-      rootMargin: "0px 0px -30px 0px",
+      threshold: 0.12
     }
   );
 
-  revealElements.forEach((element) => {
-    element.classList.add("reveal", "reveal-ready");
+  revealElements.forEach(element => {
     revealObserver.observe(element);
   });
 } else {
-  revealElements.forEach((element) => {
+  revealElements.forEach(element => {
     element.classList.add("visible");
   });
 }
 
-  /*
-  ========================================
-  ACTIVE NAVIGATION LINK
-  ========================================
-  */
+/* FAQ accordion */
 
-  const sections = document.querySelectorAll("section[id]");
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
 
-  function updateActiveNavigation() {
-    let currentSection = "";
+  if (!question) return;
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 160;
-      const sectionHeight = section.offsetHeight;
+  question.addEventListener("click", () => {
+    const wasOpen = item.classList.contains("open");
 
-      if (
-        window.scrollY >= sectionTop &&
-        window.scrollY < sectionTop + sectionHeight
-      ) {
-        currentSection = section.getAttribute("id");
-      }
+    faqItems.forEach(otherItem => {
+      otherItem.classList.remove("open");
     });
 
-    navigationLinks.forEach((link) => {
-      link.classList.remove("active-link");
-
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("active-link");
-      }
-    });
-  }
-
-  updateActiveNavigation();
-  window.addEventListener("scroll", updateActiveNavigation);
-
-  /*
-  ========================================
-  BUTTON RIPPLE EFFECT
-  ========================================
-  */
-
-  const buttons = document.querySelectorAll(
-    ".btn, button, .primary-button, .secondary-button"
-  );
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const existingRipple = button.querySelector(".button-ripple");
-
-      if (existingRipple) {
-        existingRipple.remove();
-      }
-
-      const ripple = document.createElement("span");
-      const buttonBox = button.getBoundingClientRect();
-      const rippleSize = Math.max(buttonBox.width, buttonBox.height);
-
-      ripple.className = "button-ripple";
-      ripple.style.width = `${rippleSize}px`;
-      ripple.style.height = `${rippleSize}px`;
-      ripple.style.left = `${
-        event.clientX - buttonBox.left - rippleSize / 2
-      }px`;
-      ripple.style.top = `${
-        event.clientY - buttonBox.top - rippleSize / 2
-      }px`;
-
-      button.appendChild(ripple);
-
-      setTimeout(() => {
-        ripple.remove();
-      }, 650);
-    });
+    if (!wasOpen) {
+      item.classList.add("open");
+    }
   });
-
-  /*
-  ========================================
-  AUTOMATIC COPYRIGHT YEAR
-  ========================================
-  */
-
-  const yearElement = document.querySelector(
-    "#current-year, .current-year"
-  );
-
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-
-  /*
-  ========================================
-  CONTACT FORM
-  ========================================
-  */
-
-  const contactForm = document.querySelector(
-    "#contact-form, .contact-form"
-  );
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const submitButton = contactForm.querySelector(
-        'button[type="submit"]'
-      );
-
-      if (!submitButton) return;
-
-      const originalButtonText = submitButton.textContent;
-
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending...";
-
-      setTimeout(() => {
-        submitButton.textContent = "Message sent successfully";
-
-        contactForm.reset();
-
-        setTimeout(() => {
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
-        }, 2500);
-      }, 1000);
-    });
-  }
 });
+
+/* Booking form */
+
+if (bookingForm) {
+  bookingForm.addEventListener("submit", event => {
+    event.preventDefault();
+
+    const name = bookingForm.elements.name.value.trim();
+    const phone = bookingForm.elements.phone.value.trim();
+    const vehicle = bookingForm.elements.vehicle.value.trim();
+
+    if (!name || !phone) {
+      alert("Please enter your name and phone number.");
+      return;
+    }
+
+    const message =
+      `Hello, I would like to request a service appointment.%0A%0A` +
+      `Name: ${encodeURIComponent(name)}%0A` +
+      `Phone: ${encodeURIComponent(phone)}%0A` +
+      `Vehicle: ${encodeURIComponent(vehicle || "Not provided")}`;
+
+    const whatsappNumber = "353469028548";
+
+    const whatsappUrl =
+      `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+    bookingForm.reset();
+  });
+}
+
+/* Current year */
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
